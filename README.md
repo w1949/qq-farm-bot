@@ -1,7 +1,7 @@
-# qq-farm-bot Windows 单文件版（私人化二开）
+# qq-farm-bot Windows 单文件版
 
-上游 [`liyangpengs/qq-farm-bot`](https://github.com/liyangpengs/qq-farm-bot) 的私人化二开打包，Windows x64 单文件 exe。
-本仓库只放发布产物：每次上游有新提交，自动同步上游 → 重新打包 → 移植自有功能 → 发布，并刷新固定更新清单。
+Windows x64 单文件 exe，带内置抓包、定时启停与自动更新。
+本仓库只放发布产物：每次代码基线更新后重新打包、移植自有功能并发布，同时刷新固定更新清单。
 
 ## 下载
 
@@ -39,21 +39,21 @@
 
 ## 版本更新记录
 
-| 版本 | 上游提交 | 大小 | MD5 | 主要变化 |
-| --- | --- | --- | --- | --- |
-| [20261117.22](https://github.com/w1949/qq-farm-bot-release/releases/tag/v20261117.22) | `01d6ce9` | 116,178,507 | `4f8dcb2e5bafa02374833005900234f0` | 新增更新内容说明：Release 正文、清单 notes、面板「版本与更新」均可查看本版变更 |
-| [20261117.21](https://github.com/w1949/qq-farm-bot-release/releases/tag/v20261117.21) | `01d6ce9` | 116,177,533 | `2e93e31a266b58b47d03218c8b303656` | 同步上游 01d6ce9 |
-| [20261117.20](https://github.com/w1949/qq-farm-bot-release/releases/tag/v20261117.20) | `c45cd3f` | 116,168,218 | `cec941cd542dd1774f3f3612c497243c` | 同步上游 c45cd3f |
-| [20261117.19](https://github.com/w1949/qq-farm-bot-release/releases/tag/v20261117.19) | `1cef35d` | 116,164,782 | `687b0c5efc329a2738613c56c327d397` | 同步上游 1cef35d |
-| [20261117.18](https://github.com/w1949/qq-farm-bot-release/releases/tag/v20261117.18) | `a1d0151` | 116,142,184 | `cb3153dfead29777b68165a2e96e4292` | 同步上游 a1d0151 |
-| [20261117.17](https://github.com/w1949/qq-farm-bot-release/releases/tag/v20261117.17) | `ca9d038` | 116,142,416 | `9edcfb5e24008ee275ee698473cc57be` | 同步上游 ca9d038；修复发布偶发用了旧内部版本号 exe 的问题 |
-| [20261117.16](https://github.com/w1949/qq-farm-bot-release/releases/tag/v20261117.16) | `d8f39f7` | 116,118,938 | `d01ed2c7fe33c538ae4338986719af2e` | 同步上游 d8f39f7；补回清单地址默认回退 |
-| [20261117.15](https://github.com/w1949/qq-farm-bot-release/releases/tag/v20261117.15) | `bd93d3f` | 116,105,426 | `08ac86a63a359682120b77750dcd3307` | 微信账号握手补 openID 参数，解决 code=400 |
-| [20261117.14](https://github.com/w1949/qq-farm-bot-release/releases/tag/v20261117.14) | `bd93d3f` | 116,105,263 | `08e7b3ec768543436728d936d10cff2c` | 微信扫码登录多来源取 token；错误信息带腾讯返回 code/msg |
-| [20261117.13](https://github.com/w1949/qq-farm-bot-release/releases/tag/v20261117.13) | `bd93d3f` | 116,103,541 | `c25deeadc5918834fdd2dc33fdc5fe8b` | 更新安装改无窗口执行（不再弹黑窗）；失败重试、回滚启动旧版、错误回显面板 |
-| [20261117.12](https://github.com/w1949/qq-farm-bot-release/releases/tag/v20261117.12) | `bd93d3f` | 116,101,658 | `5136f8c8493e6d87ff89c1901e7702de` | 同步上游 bd93d3f；修复清单地址被读成空串 |
-| [20261117.11](https://github.com/w1949/qq-farm-bot-release/releases/tag/v20261117.11) | `95911d3` | 116,095,685 | `2639c7c00b547bf1ba7d1625871edb0c` | 新增微信 Code 抓取（按 platform 分桶） |
-| [20261117.10](https://github.com/w1949/qq-farm-bot-release/releases/tag/v20261117.10) | `95911d3` | 116,090,882 | `c4c1c8ee08cacdba3e05fbe9976556ef` | 切换到上游 95911d3 基线 |
-| [20261117.9](https://github.com/w1949/qq-farm-bot-release/releases/tag/v20261117.9) | `c500e08` | 113,020,251 | `0a9dc46eeabf3e02c5a0f70b9eaad511` | 恢复控制台子系统，保留终端窗口 |
-| [20261117.8](https://github.com/w1949/qq-farm-bot-release/releases/tag/v20261117.8) | `c500e08` | 113,020,235 | `892e38f341afdf0559c8e5aa1b6318a0` | 更新检查 60 秒超时；清单地址默认预填 |
-| [20261117.7](https://github.com/w1949/qq-farm-bot-release/releases/tag/v20261117.7) | `c500e08` | 113,019,943 | `4dba3c091946cea0f5b3533019e68607` | 首个 GUI 打包版，更新下载带进度条 |
+| 版本 | 大小 | MD5 | 主要变化 |
+| --- | --- | --- | --- |
+| [20261117.22](https://github.com/w1949/qq-farm-bot-release/releases/tag/v20261117.22) | 116,178,507 | `4f8dcb2e5bafa02374833005900234f0` | 新增更新内容说明：Release 正文、清单 notes、面板「版本与更新」均可查看本版变更 |
+| [20261117.21](https://github.com/w1949/qq-farm-bot-release/releases/tag/v20261117.21) | 116,177,533 | `2e93e31a266b58b47d03218c8b303656` | 代码基线更新后重新打包 |
+| [20261117.20](https://github.com/w1949/qq-farm-bot-release/releases/tag/v20261117.20) | 116,168,218 | `cec941cd542dd1774f3f3612c497243c` | 代码基线更新后重新打包 |
+| [20261117.19](https://github.com/w1949/qq-farm-bot-release/releases/tag/v20261117.19) | 116,164,782 | `687b0c5efc329a2738613c56c327d397` | 代码基线更新后重新打包 |
+| [20261117.18](https://github.com/w1949/qq-farm-bot-release/releases/tag/v20261117.18) | 116,142,184 | `cb3153dfead29777b68165a2e96e4292` | 代码基线更新后重新打包 |
+| [20261117.17](https://github.com/w1949/qq-farm-bot-release/releases/tag/v20261117.17) | 116,142,416 | `9edcfb5e24008ee275ee698473cc57be` | 代码基线更新后重新打包；修复发布偶发用了旧内部版本号 exe 的问题 |
+| [20261117.16](https://github.com/w1949/qq-farm-bot-release/releases/tag/v20261117.16) | 116,118,938 | `d01ed2c7fe33c538ae4338986719af2e` | 代码基线更新后重新打包；补回清单地址默认回退 |
+| [20261117.15](https://github.com/w1949/qq-farm-bot-release/releases/tag/v20261117.15) | 116,105,426 | `08ac86a63a359682120b77750dcd3307` | 微信账号握手补 openID 参数，解决 code=400 |
+| [20261117.14](https://github.com/w1949/qq-farm-bot-release/releases/tag/v20261117.14) | 116,105,263 | `08e7b3ec768543436728d936d10cff2c` | 微信扫码登录多来源取 token；错误信息带腾讯返回 code/msg |
+| [20261117.13](https://github.com/w1949/qq-farm-bot-release/releases/tag/v20261117.13) | 116,103,541 | `c25deeadc5918834fdd2dc33fdc5fe8b` | 更新安装改无窗口执行（不再弹黑窗）；失败重试、回滚启动旧版、错误回显面板 |
+| [20261117.12](https://github.com/w1949/qq-farm-bot-release/releases/tag/v20261117.12) | 116,101,658 | `5136f8c8493e6d87ff89c1901e7702de` | 代码基线更新后重新打包；修复清单地址被读成空串 |
+| [20261117.11](https://github.com/w1949/qq-farm-bot-release/releases/tag/v20261117.11) | 116,095,685 | `2639c7c00b547bf1ba7d1625871edb0c` | 新增微信 Code 抓取（按 platform 分桶） |
+| [20261117.10](https://github.com/w1949/qq-farm-bot-release/releases/tag/v20261117.10) | 116,090,882 | `c4c1c8ee08cacdba3e05fbe9976556ef` | 切换到新代码基线重新打包 |
+| [20261117.9](https://github.com/w1949/qq-farm-bot-release/releases/tag/v20261117.9) | 113,020,251 | `0a9dc46eeabf3e02c5a0f70b9eaad511` | 恢复控制台子系统，保留终端窗口 |
+| [20261117.8](https://github.com/w1949/qq-farm-bot-release/releases/tag/v20261117.8) | 113,020,235 | `892e38f341afdf0559c8e5aa1b6318a0` | 更新检查 60 秒超时；清单地址默认预填 |
+| [20261117.7](https://github.com/w1949/qq-farm-bot-release/releases/tag/v20261117.7) | 113,019,943 | `4dba3c091946cea0f5b3533019e68607` | 首个 GUI 打包版，更新下载带进度条 |
