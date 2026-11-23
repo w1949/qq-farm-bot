@@ -5,7 +5,7 @@ Windows x64 单文件 exe，带内置抓包、定时启停与自动更新。
 
 ## 下载
 
-- 最新版：见 [Releases 最新](https://github.com/w1949/qq-farm-bot-release/releases/latest)，下载其中的 `qq-farm-bot-<版本>-<提交>.exe`
+- 最新版：见 [Releases 最新](https://github.com/w1949/qq-farm-bot-release/releases/latest)，下载该 Release 里的 `.exe` 文件即可
 - 固定更新清单（客户端默认已预填，永远不变）：
   `https://github.com/w1949/qq-farm-bot-release/releases/download/manifest/latest.json`
 
