@@ -5,7 +5,7 @@ Windows x64 单文件 exe，内置抓包填 Code、账号定时启停和自动�
 
 ## 下载
 
-- 最新版：直接下载 [v20261124.3](https://github.com/w1949/qq-farm-bot/releases/tag/v20261124.3) 里的 `qq-farm-bot-20261124.3.exe`
+- 最新版：打开 [Releases 最新](https://github.com/w1949/qq-farm-bot/releases/latest)，下载里面的 `.exe` 即可
 - 固定更新清单（客户端内置，无需填写、不可修改）：
   `https://github.com/w1949/qq-farm-bot/releases/download/manifest/latest.json`
 
@@ -41,4 +41,5 @@ Windows x64 单文件 exe，内置抓包填 Code、账号定时启停和自动�
 
 | 版本 | 更新时间 | 大小 | MD5 | 主要变化 |
 | --- | --- | --- | --- | --- |
+| [20261124.4](https://github.com/w1949/qq-farm-bot/releases/tag/v20261124.4) | 2026-11-24 | 113,286,057 | `8ba055ad75bf82abf907fa42aa8bfa74` | 更新内容改为弹窗公告展示：检测到新版时自动弹出「版本更新公告」，标题按版本发布的具体日期时间显示，正文为该版本更新说明 |
 | [20261124.3](https://github.com/w1949/qq-farm-bot/releases/tag/v20261124.3) | 2026-11-24 | 113,280,786 | `44975bac8cd87170eef674d152e8422b` | 移除自带的「系统更新」功能：那套基于 git 拉取 + 本地编译 + 版本回滚的逻辑在单文件 exe 里根本跑不起来，属于无效代码和无效接口，一并删掉 |
